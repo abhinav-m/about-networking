@@ -1,4 +1,4 @@
-#About HTTP
+# About HTTP
 
 The *Hypertext transfer protocol* is the mechanism through which data is requested and provided on the web.
 
@@ -63,7 +63,7 @@ The server’s response will start with a version as well, followed by the statu
 *  Codes that start with **5** mean an error happened on the server and the request is not to blame.
 
 
-###Headers
+### Headers
 
 The first line of a request or response may be followed by any number of headers. These are lines in the form “name: value” that specify extra information about the request or response. These headers were part of the example **response**:
 
@@ -89,7 +89,7 @@ After the headers, both requests and responses may include a blank line followed
 
 Similarly, some response types, such as error responses, do not require a body.
 
-##Browsers and HTTP
+## Browsers and HTTP
 
 As we saw in the example, a browser will make a request when we enter a URL in its address bar. When the resulting HTML page references other files, such as images and JavaScript files, those are also fetched.
 
@@ -106,7 +106,7 @@ HTML pages may include forms, which allow the user to fill out information and s
 </ form >
 ```
 
-This code describes a form with two fields: a small one asking for a name and a larger one to write a message in. When you click the Send button, the information in those fields will be encoded into a query string.When the `<form> `element’s method attribute is **GET** (or is omitted), that query string is tacked onto the action URL, and the browser makes a **GET** request to that ** URL** .
+This code describes a form with two fields: a small one asking for a name and a larger one to write a message in. When you click the Send button, the information in those fields will be encoded into a query string.When the `<form> `element’s method attribute is **GET** (or is omitted), that query string is tacked onto the action URL, and the browser makes a **GET** request to that **URL** .
 
 `GET / example / message . html ? name = Jean & message = Yes %3 F HTTP /1.1`
 
@@ -134,6 +134,6 @@ Content - length : 24
 Content - type : application /x - www - form - urlencoded
 name = Jean & message = Yes %3 F
 ```
-By convention, the  **GET ** method is used for requests that do not have side effects, such as doing a search. Requests that change something on the server, such as creating a new account or posting a message, should be expressed with other methods, such as  **POST ** . 
+By convention, the  **GET**  method is used for requests that do not have side effects, such as doing a search. Requests that change something on the server, such as creating a new account or posting a message, should be expressed with other methods, such as   **POST**  . 
 
-Client-side software, such as a browser, knows that it shouldn’t blindly make  **POST ** requests but will often implicitly make  **GET ** requests—for example, to prefetch a resource it believes the user will soon need.
+Client-side software, such as a browser, knows that it shouldn’t blindly make  **POST**  requests but will often implicitly make   **GET**  requests—for example, to prefetch a resource it believes the user will soon need.
